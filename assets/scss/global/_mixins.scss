@@ -1,0 +1,12 @@
+@mixin flex($align:unset,$justifiy:unset){
+    display: flex;
+    align-items: $align;
+    justify-content: $justifiy;
+}
+
+@mixin media($width){
+    @media screen and (max-width: #{$width}px)
+    {
+        @content;
+    }
+}
